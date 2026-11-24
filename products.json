@@ -1,0 +1,42 @@
+[
+  {
+    "id": "sweet-30",
+    "name": "แชมพูสระผม Sweet เล็ก",
+    "mood": "sweet",
+    "type": "shampoo",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/sweet.jpg",
+    "description": "กลิ่นหวานนุ่มละมุน ขนาดพกพา เหมาะสำหรับลองใช้หรือพกไปเดินทาง"
+  },
+  {
+    "id": "sweet-100",
+    "name": "แชมพูสระผม Sweet ใหญ่",
+    "mood": "sweet",
+    "type": "shampoo",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/sweet.jpg",
+    "description": "กลิ่นหวานนุ่มละมุน ขนาดใหญ่ ใช้ได้นานสำหรับทุกวัน"
+  },
+  {
+    "id": "confident-30",
+    "name": "แชมพูสระผม Confident เล็ก",
+    "mood": "confident",
+    "type": "shampoo",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/confident.jpg",
+    "description": "กลิ่นมั่นใจ สุขุม ขนาดพกพา เหมาะสำหรับลองใช้หรือพกไปเดินทาง"
+  },
+  {
+    "id": "confident-100",
+    "name": "แชมพูสระผม Confident ใหญ่",
+    "mood": "confident",
+    "type": "shampoo",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/confident.jpg",
+    "description": "กลิ่นมั่นใจ สุขุม ขนาดใหญ่ ใช้ได้นานสำหรับทุกวัน"
+  }
+]

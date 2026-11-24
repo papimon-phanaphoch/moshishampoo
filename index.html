@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>moshi shampoo — แชมพูสระผมกลิ่นหอมติดตัว</title>
+  <meta name="description" content="เปลี่ยนความรู้สึกสดชื่นหลังสระผม ให้กลายเป็นกลิ่นหอมติดตัวที่บ่งบอกความเป็นคุณ">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าแรก */
+    .hero--full {
+      display: flex;
+      align-items: center;
+      min-height: calc(100vh - 4.5rem);
+      min-height: calc(100svh - 4.5rem);
+      padding: var(--space-6) 0;
+    }
+
+    .hero--full h1 {
+      max-width: 24ch;
+      margin: 0 auto var(--space-4);
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1.5;
+      text-wrap: balance;
+    }
+
+    .hero-line {
+      display: block;
+    }
+
+    .mood-card .product-card__body {
+      padding: var(--space-4);
+    }
+
+    .mood-card__cta {
+      color: var(--accent-deep);
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">moshi shampoo</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero hero--full">
+      <div class="container">
+        <h1>
+          <span class="hero-line">เปลี่ยนความรู้สึกสดชื่นหลังสระผม</span>
+          <span class="hero-line">ให้กลายเป็นกลิ่นหอมติดตัว</span>
+          <span class="hero-line">ที่บ่งบอกความเป็นคุณ</span>
+        </h1>
+        <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+      </div>
+    </section>
+
+    <section class="section" id="moods" aria-labelledby="moods-title">
+      <div class="container">
+        <div class="section-head center">
+          <h2 id="moods-title">เลือกกลิ่นที่เป็นคุณ</h2>
+          <span class="mood-rule"></span>
+        </div>
+
+        <div class="grid grid--2">
+
+          <a class="product-card mood-card mood-sweet" href="product.html?mood=sweet">
+            <div class="product-card__body">
+              <div class="product-card__mood">
+                <span class="mood-dot"></span>โทนสีขาว-ชมพู
+              </div>
+              <h3 class="product-card__name">Sweet</h3>
+              <span class="mood-rule"></span>
+              <p>สัมผัสความหอมละมุน อ่อนโยน และแฝงไปด้วยความน่ารักสดใส เหมือนช่วงเวลาพักผ่อนแสนสบายที่ช่วยเติมเต็มความอ่อนหวานให้กับทุกวันของคุณ</p>
+              <div class="product-card__footer">
+                <span class="mood-card__cta">ดูสินค้า Sweet</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="product-card mood-card mood-confident" href="product.html?mood=confident">
+            <div class="product-card__body">
+              <div class="product-card__mood">
+                <span class="mood-dot"></span>โทนสีขาวอมฟ้าเทา-น้ำเงินเทาเข้ม
+              </div>
+              <h3 class="product-card__name">Confident</h3>
+              <span class="mood-rule"></span>
+              <p>กลิ่นหอมสะอาด สุขุม และมีความนิ่งอย่างมีระดับ ช่วยสร้างความรู้สึกสดชื่น ปลอดโปร่ง และเสริมความมั่นใจให้คุณพร้อมรับมือกับทุกสถานการณ์</p>
+              <div class="product-card__footer">
+                <span class="mood-card__cta">ดูสินค้า Confident</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="brand">moshi shampoo</span>
+      <small>© 2026 moshi shampoo</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

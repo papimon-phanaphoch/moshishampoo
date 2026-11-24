@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า — moshi shampoo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าสั่งซื้อ */
+    .form-narrow {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .form-actions {
+      margin-top: var(--space-4);
+    }
+
+    .form-back {
+      margin-top: var(--space-3);
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    .form-back a {
+      color: var(--ink-soft);
+      border-bottom: 1px solid var(--beige-deep);
+    }
+
+    .form-back a:hover {
+      color: var(--accent-deep);
+      border-bottom-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">moshi shampoo</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="form-narrow">
+
+          <div class="section-head">
+            <h1>สั่งซื้อสินค้า</h1>
+            <span class="mood-rule"></span>
+          </div>
+
+          <form id="orderForm">
+
+            <div class="form-field">
+              <label for="customerName">ชื่อลูกค้า</label>
+              <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="contact">เบอร์โทร / Line</label>
+              <input type="text" id="contact" name="contact" autocomplete="off" required>
+            </div>
+
+            <div class="form-field">
+              <label for="items">รายการสินค้า</label>
+              <textarea id="items" name="items" rows="3" required></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="total">จำนวนเงินรวม (บาท)</label>
+              <input type="text" id="total" name="total" inputmode="decimal" required>
+            </div>
+
+            <div class="form-field">
+              <label for="note">หมายเหตุ</label>
+              <textarea id="note" name="note" rows="3"></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn--block">ยืนยันสั่งซื้อ</button>
+            </div>
+
+          </form>
+
+          <p class="form-back"><a href="product.html">กลับไปเลือกสินค้า</a></p>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="brand">moshi shampoo</span>
+      <small>© 2026 moshi shampoo</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
